@@ -55,7 +55,7 @@ router.get('/scraping', function(req, res, next) {
     resJson.link = [];
 
     // 検索結果が個別に格納されている要素をループ
-    $('img#img').each(function () {
+    $('#rso .g').each(function () {
       // 各検索結果のタイトル部分とURL、概要を取得
       let $h3 = $(this).find('h3');
       let url = $h3.find('a').attr('href');
